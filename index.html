@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.2/lib/p5.min.js"></script>
+</head>
+<body>
+AI+반도체
+    <script>
+        function setup() {
+          createCanvas(400, 400);
+          background('#9a8bbf');
+          strokeWeight(10);
+          strokeJoin(BEVEL);
+          fill('red');
+          rect(100,200,200,50);
+          strokeWeight(2);
+          // fill('#209c91'); // no transparent option
+          fill(32,156,145, 150);
+          rect(180,220,40,90,20);
+        }
+        function draw() {
+            fill(207+random(47),94+random(254-94),58+random(150), random(150));
+            circle(random(400),random(400),random(400))
+        }
+    </script>
+</body>
+</html>
